@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+    <aspects>
+        <weaver>
+            <include options="-verbose" within="io.restassured.*"/>
+        </weaver>
+        <aspects>
+            <aspect name="com.microdev.automation.restng.aop.GivenAspect"/>
+            <aspect name="com.microdev.automation.restng.aop.RequestAspect"/>
+            <aspect name="com.microdev.automation.restng.aop.WhenAspect"/>
+            <aspect name="com.microdev.automation.restng.aop.ThenAspect"/>
+        </aspects>
+    </aspects>
+</aspectj>

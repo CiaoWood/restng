@@ -1,0 +1,14 @@
+.allure
+
+#IDEA Files
+.idea
+target
+*.iml
+*.ipr
+.mvn
+
+#Eclipse files
+*.settings
+*.classpath
+*.project
+*.pydevproject

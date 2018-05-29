@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="默认测试集" verbose="2" parallel="classes" thread-count="10">
+    <listeners>
+        <listener class-name="com.microdev.automation.restng.util.testng.TestRetryAnalyzerListener"/>
+    </listeners>
+    <test name="默认测试组">
+        <packages>
+            <package name="com.microdev.automation.restng.ut.*"/>
+        </packages>
+    </test>
+</suite>
